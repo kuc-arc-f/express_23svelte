@@ -6,7 +6,7 @@
 
  date    : 2024/01/17
 
- update : 2024/01/18 
+ update : 2024/01/19 
 
 ***
 
@@ -16,6 +16,8 @@ express + Svelte SPA, sample
 
 ***
 ### blog
+
+* https://zenn.dev/knaka0209/scraps/c8e40ce5192efa
 
 ***
 
