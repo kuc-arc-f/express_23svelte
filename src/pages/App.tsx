@@ -8,9 +8,14 @@ export function Csr() {
         <title>welcome</title>
         </head>
         <div id="app"></div>
-        <script type="module" src="/public/static/main.js"></script>
+        {(process.env.NODE_ENV === "develop") ? (
+            <script type="module" src="/static/main.js"></script>
+        ): (
+            <script type="module" src="/public/static/main.js"></script>
+        )}
     </html>
     );
 }
 /*
+        <script type="module" src="/public/static/main.js"></script>
 */
