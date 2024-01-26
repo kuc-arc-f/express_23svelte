@@ -12,7 +12,7 @@ console.log('clicked');
       userId: 0,
     }
 //console.log(postItem); 
-    const json = await HttpCommon.post(postItem, "/test/get_list");
+    const json = await HttpCommon.post(postItem, "/api/test/test1");
     items = json.data;  
 console.log(items);
   } catch (error) {
