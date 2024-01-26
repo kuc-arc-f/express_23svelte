@@ -1,5 +1,7 @@
 
 const express = require('express');
+const cors = require('cors');
+
 const app = express();
 import { renderToString } from 'react-dom/server';
 //
@@ -9,6 +11,7 @@ import testRouter from './routes/test';
 import commonRouter from './routes/common';
 //
 require('dotenv').config();
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
